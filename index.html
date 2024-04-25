@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz de Imunologia</title>
+<style>
+  /* Estilos CSS */
+  body {
+  font-family: Arial, sans-serif;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style: none;
+  padding-left: 0;
+}
+
+.options li {
+  margin-bottom: 10px;
+}
+
+.answer {
+  margin-top: 10px;
+  font-style: italic;
+  display: none;
+  color: rgb(0, 173, 0);
+}
+
+.correct {
+  color: rgb(4, 205, 4);
+}
+
+.incorrect {
+  color: red;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Questão 1 -->
+<div class="question">
+  <p><strong>1. O sistema imunológico humano apresenta como função primordial a defesa do organismo. Uma das formas de proteção é a produção de _______________ , proteínas que reagem de forma específica com agentes estranhos denominados genericamente de _______________.</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q1" value="incorrect"> a) anticorpos e leucócitos.</li>
+    <li><input type="radio" name="q1" value="incorrect"> b) leucócitos e anticorpos.</li>
+    <li><input type="radio" name="q1" value="correct"> c) anticorpos e antígenos.</li>
+    <li><input type="radio" name="q1" value="incorrect"> d) antígenos e anticorpos.</li>
+    <li><input type="radio" name="q1" value="incorrect"> e) leucócitos e antígenos.</li>
+  </ul>
+</div>
+
+<!-- Aqui continuam as demais questões... -->
+<!-- Questão 2 -->
+<div class="question">
+  <p><strong>2. Ao falar sobre o sistema imunológico, muitas pessoas lembram-se apenas da defesa por meio da produção de anticorpos. Entretanto, algumas células, como os macrófagos, são capazes de englobar e digerir organismos invasores, um processo conhecido por:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q2" value="a"> a) plasmocitose.</li>
+    <li><input type="radio" name="q2" value="b"> b) apoptose.</li>
+    <li><input type="radio" name="q2" value="c"> c) pinocitose.</li>
+    <li><input type="radio" name="q2" value="d"> d) fagocitose.</li>
+    <li><input type="radio" name="q2" value="e"> e) exocitose.</li>
+  </ul>
+  <div class="answer" id="q2-answer">Resposta: d) fagocitose.</div>
+</div>
+
+<!-- Questão 3 -->
+<div class="question">
+  <p><strong>3. Nem todos os leucócitos são capazes de produzir anticorpos, atuando na defesa do nosso organismo de outras formas. Os leucócitos capazes de produzir anticorpos são os:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q3" value="a"> a) linfócitos T.</li>
+    <li><input type="radio" name="q3" value="b"> b) neutrófilos.</li>
+    <li><input type="radio" name="q3" value="c"> c) macrófagos.</li>
+    <li><input type="radio" name="q3" value="d"> d) eosinófilos.</li>
+    <li><input type="radio" name="q3" value="e"> e) linfócitos B.</li>
+  </ul>
+  <div class="answer" id="q3-answer">Resposta: e) linfócitos B.</div>
+</div>
+
+<!-- Questão 4 -->
+<div class="question">
+  <p><strong>4. (PUC-RJ-2007) Consideramos uma vacina um material que contém:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q4" value="a"> a) anticorpos contra determinado patógeno, que estimulam a resposta imunológica do indivíduo.</li>
+    <li><input type="radio" name="q4" value="b"> b) anticorpos contra determinado patógeno produzidos por outro animal e que fornecem proteção imunológica.</li>
+    <li><input type="radio" name="q4" value="c"> c) soro de indivíduos previamente imunizados contra aquele patógeno.</li>
+    <li><input type="radio" name="q4" value="d"> d) células brancas produzidas por animais, que se multiplicam no corpo do indivíduo que recebe a vacina.</li>
+    <li><input type="radio" name="q4" value="e"> e) um patógeno vivo enfraquecido ou partes dele para estimular a resposta imunológica, mas não causar a doença.</li>
+  </ul>
+  <div class="answer" id="q4-answer">Resposta: e) um patógeno vivo enfraquecido ou partes dele para estimular a resposta imunológica, mas não causar a doença.</div>
+</div>
+
+<!-- Questão 5 -->
+<div class="question">
+  <p><strong>5. (PUC-MG) Gripe e AIDS são doenças provocadas por vírus. Entretanto, a gripe tem uma evolução benigna, e a AIDS já não tem. Isso ocorre porque:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q5" value="a"> a) o vírus da gripe é mais fraco que o vírus da AIDS.</li>
+    <li><input type="radio" name="q5" value="b"> b) o vírus da AIDS destrói as células responsáveis pela defesa imunológica.</li>
+    <li><input type="radio" name="q5" value="c"> c) nosso organismo já é naturalmente imune ao vírus da gripe.</li>
+    <li><input type="radio" name="q5" value="d"> d) o vírus da AIDS não é reconhecido como antígeno pelo sistema imunológico.</li>
+    <li><input type="radio" name="q5" value="e"> e) os mecanismos de infecção são diferentes.</li>
+  </ul>
+  <div class="answer" id="q5-answer">Resposta: b) o vírus da AIDS destrói as células responsáveis pela defesa imunológica.</div>
+</div>
+
+<!-- Questão 6 -->
+<div class="question">
+  <p><strong>6. A produção de anticorpos pelos linfócitos B ocorre após essas células diferenciarem-se em:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q6" value="a"> a) Plasmodium.</li>
+    <li><input type="radio" name="q6" value="b"> b) Plasmídeos.</li>
+    <li><input type="radio" name="q6" value="c"> c) Plastídios.</li>
+    <li><input type="radio" name="q6" value="d"> d) Plasmócitos.</li>
+    <li><input type="radio" name="q6" value="e"> e) Plastos.</li>
+  </ul>
+  <div class="answer" id="q6-answer">Resposta: d) Plasmócitos.</div>
+</div>
+
+<!-- Questão 7 -->
+<div class="question">
+  <p><strong>7. Marque a alternativa que indica corretamente o nome da célula do sangue que atua em processos alérgicos e é capaz de liberar heparina.</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q7" value="a"> a) Neutrófilo</li>
+    <li><input type="radio" name="q7" value="b"> b) Eosinófilo</li>
+    <li><input type="radio" name="q7" value="c"> c) Basófilo</li>
+    <li><input type="radio" name="q7" value="d"> d) Linfócito B</li>
+    <li><input type="radio" name="q7" value="e"> e) Linfócito T</li>
+  </ul>
+  <div class="answer" id="q7-answer">Resposta: c) Basófilo.</div>
+</div>
+
+<!-- Questão 8 -->
+<div class="question">
+  <p><strong>8. Os anticorpos atuam de diferentes formas no nosso organismo. Eles podem, por exemplo, unir-se ao antígeno, promovendo o reconhecimento por macrófagos ou neutrófilos que serão responsáveis pela fagocitose. Esse processo é conhecido como:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q8" value="a"> a) Neutralização.</li>
+    <li><input type="radio" name="q8" value="b"> b) Opsonização.</li>
+    <li><input type="radio" name="q8" value="c"> c) Ativação do sistema de complemento.</li>
+    <li><input type="radio" name="q8" value="d"> d) Deleção.</li>
+    <li><input type="radio" name="q8" value="e"> e) Fagonização.</li>
+  </ul>
+  <div class="answer" id="q8-answer">Resposta: b) Opsonização.</div>
+</div>
+
+<!-- Questão 9 -->
+<div class="question">
+  <p><strong>9. Os órgãos linfoides fazem parte do sistema imune e podem ser classificados em centrais e periféricos. Marque o nome correto do órgão linfoide em que os linfócitos T completam sua maturação.</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q9" value="a"> a) Medula óssea</li>
+    <li><input type="radio" name="q9" value="b"> b) Timo</li>
+    <li><input type="radio" name="q9" value="c"> c) Baço</li>
+    <li><input type="radio" name="q9" value="d"> d) Linfonodo</li>
+    <li><input type="radio" name="q9" value="e"> e) Apêndice</li>
+  </ul>
+  <div class="answer" id="q9-answer">Resposta: b) Timo.</div>
+</div>
+
+<!-- Questão 10 -->
+<div class="question">
+  <p><strong>10. Que nome se dá à imunidade que o indivíduo possui desde o seu nascimento?</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q10" value="a"> a) Imunidade adquirida</li>
+    <li><input type="radio" name="q10" value="b"> b) Imunidade nova</li>
+    <li><input type="radio" name="q10" value="c"> c) Imunidade de barreira</li>
+    <li><input type="radio" name="q10" value="d"> d) Imunidade inata</li>
+    <li><input type="radio" name="q10" value="e"> e) Imunidade específica</li>
+  </ul>
+  <div class="answer" id="q10-answer">Resposta: d) Imunidade inata.</div>
+</div>
+
+<!-- Questão 11 -->
+<div class="question">
+  <p><strong>11. (Enem) A esquistossomose (barriga-dʼágua) caracteriza-se pela inflamação do fígado e do baço causada pelo verme Schistosoma mansoni (esquistossomo). O contágio ocorre depois que larvas do verme são liberadas na água pelo caramujo do gênero Biomphalaria, seu hospedeiro intermediário, e penetram na pele humana. Após o diagnóstico, o tratamento tradicional utiliza medicamentos por via oral para matar o parasita dentro do corpo. Uma nova estratégia terapêutica baseia-se na utilização de uma vacina, feita a partir de uma proteína extraída do verme, que induz o organismo humano a produzir anticorpos para combater e prevenir a doença. Uma vantagem da vacina em relação ao tratamento tradicional é que ela poderá</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q11" value="a"> a) impedir a penetração do parasita pela pele.</li>
+    <li><input type="radio" name="q11" value="b"> b) eliminar o caramujo para que não haja contágio.</li>
+    <li><input type="radio" name="q11" value="c"> c) impedir o acesso do esquistossomo especificamente para o fígado.</li>
+    <li><input type="radio" name="q11" value="d"> d) eliminar o esquistossomo antes que ocorra contato com o organismo.</li>
+    <li><input type="radio" name="q11" value="e"> e) eliminar o esquistossomo dentro do organismo antes da manifestação de sintomas.</li>
+  </ul>
+  <div class="answer" id="q11-answer">Resposta: e) eliminar o esquistossomo dentro do organismo antes da manifestação de sintomas.</div>
+</div>
+
+<!-- Questão 12 -->
+<div class="question">
+  <p><strong>12. (UNISC) No sangue, além das hemácias, encontramos leucócitos. Um dos tipos de leucócitos são os linfócitos, cuja frequência é relativamente alta no sangue. Em relação a essas células, os linfócitos, podemos afirmar que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q12" value="a"> a) São células encontradas exclusivamente no sangue.</li>
+    <li><input type="radio" name="q12" value="b"> b) São células que podem ser encontradas com facilidade no tecido conjuntivo, além do sangue e linfa.</li>
+    <li><input type="radio" name="q12" value="c"> c) Ocorrem exclusivamente na medula vermelha dos ossos.</li>
+    <li><input type="radio" name="q12" value="d"> d) São encontradas unicamente nos nódulos linfáticos e linfa.</li>
+  </ul>
+  <div class="answer" id="q12-answer">Resposta: b) São células que podem ser encontradas com facilidade no tecido conjuntivo, além do sangue e linfa.</div>
+</div>
+
+<!-- Questão 13 -->
+<div class="question">
+  <p><strong>13. (UERJ) O uso de preservativos masculinos e femininos constitui uma importante medida de prevenção contra a AIDS. Esses dispositivos:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q13" value="a"> a) impedem a entrada dos linfócitos T CD4+ nos organismos.</li>
+    <li><input type="radio" name="q13" value="b"> b) promovem a morte dos agentes causadores da doença.</li>
+    <li><input type="radio" name="q13" value="c"> c) dificultam o contato entre os anticorpos e o vírus HIV.</li>
+    <li><input type="radio" name="q13" value="d"> d) bloqueiam a passagem do plasma seminal para o organismo dos parceiros sexuais.</li>
+  </ul>
+  <div class="answer" id="q13-answer">Resposta: d) bloqueiam a passagem do plasma seminal para o organismo dos parceiros sexuais.</div>
+</div>
+
+<!-- Questão 14 -->
+<div class="question">
+  <p><strong>14. (UFRGS) Considere as seguintes afirmações sobre a vacinação:
+      I. A vacinação é uma das medidas mais eficazes de prevenção contra as doenças infecciosas.
+      II. Vacinas são constituídas por agentes patogênicos causadores de doenças.
+      III. Após a vacinação, o organismo humano produz anticorpos específicos contra os agentes causadores de doenças.
+      Quais estão corretas?</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q14" value="a"> a) Apenas I.</li>
+    <li><input type="radio" name="q14" value="b"> b) Apenas II.</li>
+    <li><input type="radio" name="q14" value="c"> c) Apenas III.</li>
+    <li><input type="radio" name="q14" value="d"> d) Apenas I e II.</li>
+    <li><input type="radio" name="q14" value="e"> e) I, II e III.</li>
+  </ul>
+  <div class="answer" id="q14-answer">Resposta: a) Apenas I.</div>
+</div>
+
+<!-- Questão 15 -->
+<div class="question">
+  <p><strong>15. (UPE) A dengue é uma doença viral transmitida pelo mosquito Aedes aegypti e que pode se manifestar de quatro formas: dengue clássica, dengue hemorrágica, febre da dengue e dengue com complicações. Atualmente, não existe uma vacina que previna a dengue, mas pesquisadores estão trabalhando para o desenvolvimento de uma vacina eficaz. Em relação à imunidade contra a dengue, podemos afirmar que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q15" value="a"> a) a única forma de prevenção é a vacinação.</li>
+    <li><input type="radio" name="q15" value="b"> b) a dengue é uma doença autoimune, ou seja, o próprio organismo produz os anticorpos necessários para combater o vírus.</li>
+    <li><input type="radio" name="q15" value="c"> c) uma pessoa que já teve dengue desenvolve imunidade permanente contra a doença.</li>
+    <li><input type="radio" name="q15" value="d"> d) a infecção pelo vírus da dengue estimula o organismo a produzir anticorpos específicos, conferindo imunidade temporária contra novas infecções.</li>
+    <li><input type="radio" name="q15" value="e"> e) a imunidade contra a dengue é obtida apenas por meio da ingestão de alimentos ricos em vitamina C.</li>
+  </ul>
+  <div class="answer" id="q15-answer">Resposta: d) a infecção pelo vírus da dengue estimula o organismo a produzir anticorpos específicos, conferindo imunidade temporária contra novas infecções.</div>
+</div>
+
+<!-- Questão 16 -->
+<div class="question">
+  <p><strong>16. (UEL) A hepatite B é uma doença viral transmitida pelo sangue e outros fluidos corporais infectados, podendo causar infecção aguda ou crônica. Sobre a hepatite B e sua prevenção, considere as seguintes afirmativas:</strong></p>
+  <p>I. A vacinação contra a hepatite B é feita com a aplicação de três doses da vacina.</p>
+  <p>II. A hepatite B pode ser prevenida pelo uso de preservativos durante a relação sexual.</p>
+  <p>III. O tratamento da hepatite B crônica envolve o uso de antivirais e a administração de vacina.</p>
+  <ul class="options">
+    <li><input type="radio" name="q16" value="a"> a) Apenas I.</li>
+    <li><input type="radio" name="q16" value="b"> b) Apenas II.</li>
+    <li><input type="radio" name="q16" value="c"> c) Apenas III.</li>
+    <li><input type="radio" name="q16" value="d"> d) Apenas I e II.</li>
+    <li><input type="radio" name="q16" value="e"> e) I, II e III.</li>
+  </ul>
+  <div class="answer" id="q16-answer">Resposta: e) I, II e III.</div>
+</div>
+
+<!-- Questão 17 -->
+<div class="question">
+  <p><strong>17. (UNICENTRO) Sobre o sistema imunológico humano, é correto afirmar:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q17" value="a"> a) As células de defesa do organismo são exclusivamente os linfócitos.</li>
+    <li><input type="radio" name="q17" value="b"> b) O principal mecanismo de defesa do organismo contra agentes patogênicos é a produção de histamina.</li>
+    <li><input type="radio" name="q17" value="c"> c) As vacinas têm o objetivo de produzir a resposta imune primária em indivíduos infectados por agentes patogênicos.</li>
+    <li><input type="radio" name="q17" value="d"> d) As respostas imunológicas do organismo são sempre específicas para determinados agentes patogênicos.</li>
+    <li><input type="radio" name="q17" value="e"> e) O sistema imunológico não é capaz de diferenciar células próprias das estranhas.</li>
+  </ul>
+  <div class="answer" id="q17-answer">Resposta: d) As respostas imunológicas do organismo são sempre específicas para determinados agentes patogênicos.</div>
+</div>
+
+<!-- Questão 18 -->
+<div class="question">
+  <p><strong>18. (ENEM) As primeiras vacinas utilizadas pelo ser humano foram desenvolvidas a partir da observação de que pessoas que sobreviviam a determinadas doenças infecciosas, como a varíola, não voltavam a apresentar a doença. Essa observação levou à produção de vacinas a partir do princípio da:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q18" value="a"> a) injeção de agentes patogênicos vivos no organismo.</li>
+    <li><input type="radio" name="q18" value="b"> b) produção de células de defesa no organismo por agentes patogênicos vivos.</li>
+    <li><input type="radio" name="q18" value="c"> c) inoculação de agentes patogênicos mortos no organismo.</li>
+    <li><input type="radio" name="q18" value="d"> d) produção de células de memória no organismo por agentes patogênicos mortos.</li>
+    <li><input type="radio" name="q18" value="e"> e) introdução de agentes patogênicos atenuados no organismo.</li>
+  </ul>
+  <div class="answer" id="q18-answer">Resposta: c) produção de células de memória no organismo por agentes patogênicos mortos.</div>
+</div>
+
+<!-- Questão 19 -->
+<div class="question">
+  <p><strong>19. (UNICAMP) "Ao picar um indivíduo que já teve dengue, o mosquito Aedes aegypti pode contrair o vírus causador da doença. Em sua próxima picada, esse mosquito infectará outro indivíduo, transmitindo-lhe o vírus. A prática de não deixar água acumulada em recipientes, como pneus velhos e garrafas, em que o mosquito deposita seus ovos, é uma medida preventiva eficaz porque impede a</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q19" value="a"> a) contaminação do solo por larvas do mosquito.</li>
+    <li><input type="radio" name="q19" value="b"> b) reprodução das fêmeas do mosquito em seu habitat natural.</li>
+    <li><input type="radio" name="q19" value="c"> c) proliferação do mosquito, impedindo-o de se alimentar e, consequentemente, de transmitir a doença.</li>
+    <li><input type="radio" name="q19" value="d"> d) formação de ovos do mosquito.</li>
+    <li><input type="radio" name="q19" value="e"> e) transmissão do vírus da dengue.</li>
+  </ul>
+  <div class="answer" id="q19-answer">Resposta: demais) transmissão do vírus da dengue.</div>
+</div>
+
+<!-- Questão 20 -->
+<div class="question">
+  <p><strong>20. (ENEM) Para aumentar a eficácia da vacinação contra uma doença viral, muitas vezes são administradas doses de reforço. A estratégia tem como objetivo:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q20" value="a"> a) provocar a manifestação dos sintomas da doença.</li>
+    <li><input type="radio" name="q20" value="b"> b) prevenir a resposta imunológica tardia.</li>
+    <li><input type="radio" name="q20" value="c"> c) estimular a produção de citocinas pró-inflamatórias.</li>
+    <li><input type="radio" name="q20" value="d"> d) aumentar a concentração de anticorpos circulantes.</li>
+    <li><input type="radio" name="q20" value="e"> e) acelerar a degradação do antígeno vacinal.</li>
+  </ul>
+  <div class="answer" id="q20-answer">Resposta: d) aumentar a concentração de anticorpos circulantes.</div>
+</div>
+
+<!-- Questão 21 -->
+<div class="question">
+  <p><strong>21. (ENEM) A vacinação é uma estratégia para prevenir a ocorrência de doenças infecciosas que pode gerar benefícios individuais e coletivos. Um dos princípios que sustenta essa estratégia é o(a):</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q21" value="a"> a) memória imunológica.</li>
+    <li><input type="radio" name="q21" value="b"> b) reatividade cruzada.</li>
+    <li><input type="radio" name="q21" value="c"> c) resistência à infecção.</li>
+    <li><input type="radio" name="q21" value="d"> d) cooperação celular.</li>
+    <li><input type="radio" name="q21" value="e"> e) virulência do agente.</li>
+  </ul>
+  <div class="answer" id="q21-answer">Resposta: a) memória imunológica.</div>
+</div>
+
+<!-- Questão 22 -->
+<div class="question">
+  <p><strong>22. (UFSM) A vacina contra a rubéola é constituída por vírus atenuado, sendo contraindicada para:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q22" value="a"> a) grávidas, porque a infecção pelo vírus atenuado pode provocar aborto.</li>
+    <li><input type="radio" name="q22" value="b"> b) mulheres em idade fértil, porque a vacina pode causar infertilidade.</li>
+    <li><input type="radio" name="q22" value="c"> c) crianças, porque elas têm imunidade natural contra o vírus.</li>
+    <li><input type="radio" name="q22" value="d"> d) pessoas com imunodeficiência, porque a vacina pode causar infecções graves.</li>
+    <li><input type="radio" name="q22" value="e"> e) pessoas que já tiveram rubéola, porque a vacina não confere imunidade.</li>
+  </ul>
+  <div class="answer" id="q22-answer">Resposta: a) grávidas, porque a infecção pelo vírus atenuado pode provocar aborto.</div>
+</div>
+
+<!-- Questão 23 -->
+<div class="question">
+  <p><strong>23. (ENEM) A vacinação é uma forma eficaz de prevenir a ocorrência de diversas doenças infecciosas. Sobre o processo de vacinação, é correto afirmar que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q23" value="a"> a) os anticorpos presentes nas vacinas conferem imunidade ativa e duradoura contra a doença.</li>
+    <li><input type="radio" name="q23" value="b"> b) a vacinação consiste na administração de anticorpos específicos contra o agente infeccioso.</li>
+    <li><input type="radio" name="q23" value="c"> c) a vacinação é uma forma de imunização passiva, pois os anticorpos são produzidos pelo próprio organismo.</li>
+    <li><input type="radio" name="q23" value="d"> d) a vacinação é capaz de prevenir doenças causadas por bactérias, mas não por vírus.</li>
+    <li><input type="radio" name="q23" value="e"> e) a vacinação consiste na administração de antígenos inativados ou atenuados, que estimulam o sistema imunológico a produzir anticorpos específicos.</li>
+  </ul>
+  <div class="answer" id="q23-answer">Resposta: e) a vacinação consiste na administração de antígenos inativados ou atenuados, que estimulam o sistema imunológico a produzir anticorpos específicos.</div>
+</div>
+
+<!-- Questão 24 -->
+<div class="question">
+  <p><strong>24. (ENEM) O sistema imunológico é constituído por uma série de mecanismos de defesa que atuam na proteção do organismo contra agentes invasores, como bactérias, vírus e parasitas. A principal célula envolvida na resposta imunológica adaptativa é o:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q24" value="a"> a) macrófago.</li>
+    <li><input type="radio" name="q24" value="b"> b) linfócito T.</li>
+    <li><input type="radio" name="q24" value="c"> c) neutrófilo.</li>
+    <li><input type="radio" name="q24" value="d"> d) eosinófilo.</li>
+    <li><input type="radio" name="q24" value="e"> e) basófilo.</li>
+  </ul>
+  <div class="answer" id="q24-answer">Resposta: b) linfócito T.</div>
+</div>
+
+<!-- Questão 25 -->
+<div class="question">
+  <p><strong>25. (UFRN) Sobre a importância da vacinação, assinale a alternativa correta.</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q25" value="a"> a) A vacinação gera imunidade passiva, que é caracterizada pela transferência de anticorpos.</li>
+    <li><input type="radio" name="q25" value="b"> b) A vacinação é capaz de erradicar doenças virais, mas não é eficaz contra doenças bacterianas.</li>
+    <li><input type="radio" name="q25" value="c"> c) A vacinação é uma medida preventiva que induz o organismo a produzir células de memória, conferindo imunidade ativa e duradoura.</li>
+    <li><input type="radio" name="q25" value="d"> d) A vacinação somente é eficaz se realizada após a infecção pelo agente patogênico.</li>
+    <li><input type="radio" name="q25" value="e"> e) A vacinação é indicada somente para crianças, pois o sistema imunológico de adultos é menos responsivo às vacinas.</li>
+  </ul>
+  <div class="answer" id="q25-answer">Resposta: c) A vacinação é uma medida preventiva que induz o organismo a produzir células de memória, conferindo imunidade ativa e duradoura.</div>
+</div>
+
+<!-- Questão 26 -->
+
+
+<!-- Questão 27 -->
+<div class="question">
+  <p><strong>27. (ENEM) Os sistemas imunológicos dos vertebrados apresentam barreiras naturais à entrada de microrganismos patogênicos, como a pele e as mucosas. Caso essas barreiras sejam vencidas, o organismo conta com mecanismos específicos de defesa, como a produção de anticorpos. Em relação à produção de anticorpos, é correto afirmar que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q27" value="a"> a) ocorre de maneira inespecífica, sem a participação dos linfócitos.</li>
+    <li><input type="radio" name="q27" value="b"> b) é mediada exclusivamente por células do sistema nervoso.</li>
+    <li><input type="radio" name="q27" value="c"> c) resulta da ação direta dos fagócitos sobre os microrganismos invasores.</li>
+    <li><input type="radio" name="q27" value="d"> d) envolve a atuação de células especializadas na produção de anticorpos, como os linfócitos B.</li>
+    <li><input type="radio" name="q27" value="e"> e) ocorre apenas após a manifestação dos sintomas da doença.</li>
+  </ul>
+  <div class="answer" id="q27-answer">Resposta: d) envolve a atuação de células especializadas na produção de anticorpos, como os linfócitos B.</div>
+</div>
+
+<!-- Questão 28 -->
+<div class="question">
+  <p><strong>28. (ENEM) Em 2014, o Ministério da Saúde divulgou o cronograma de vacinação contra o vírus HPV no Brasil. A vacina contra o HPV é indicada para:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q28" value="a"> a) mulheres com menos de 15 anos, com o objetivo de prevenir o câncer de colo de útero.</li>
+    <li><input type="radio" name="q28" value="b"> b) homens com mais de 40 anos, com o objetivo de reduzir a transmissão do vírus.</li>
+    <li><input type="radio" name="q28" value="c"> c) mulheres com mais de 60 anos, com o objetivo de aumentar a imunidade contra o vírus.</li>
+    <li><input type="radio" name="q28" value="d"> d) homens com menos de 10 anos, com o objetivo de prevenir a infecção pelo vírus.</li>
+    <li><input type="radio" name="q28" value="e"> e) mulheres com mais de 15 anos, com o objetivo de aumentar a imunidade contra o vírus.</li>
+  </ul>
+  <div class="answer" id="q28-answer">Resposta: a) mulheres com menos de 15 anos, com o objetivo de prevenir o câncer de colo de útero.</div>
+</div>
+
+<!-- Questão 29 -->
+<div class="question">
+  <p><strong>29. (ENEM) A vacinação é uma estratégia de saúde pública que contribui para a prevenção e controle de diversas doenças infecciosas. Entre as vantagens da vacinação, podemos citar:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q29" value="a"> a) aumento da taxa de mortalidade infantil.</li>
+    <li><input type="radio" name="q29" value="b"> b) diminuição do acesso aos serviços de saúde.</li>
+    <li><input type="radio" name="q29" value="c"> c) redução do número de internações hospitalares.</li>
+    <li><input type="radio" name="q29" value="d"> d) aumento da resistência dos microrganismos aos antibióticos.</li>
+    <li><input type="radio" name="q29" value="e"> e) diminuição da expectativa de vida da população.</li>
+  </ul>
+  <div class="answer" id="q29-answer">Resposta: c) redução do número de internações hospitalares.</div>
+</div>
+
+<!-- Questão 30 -->
+<div class="question">
+  <p><strong>30. (ENEM) As vacinas são preparações que estimulam o sistema imunológico a reconhecer e combater agentes patogênicos, como vírus e bactérias. O benefício das vacinas é:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q30" value="a"> a) a cura das doenças infecciosas.</li>
+    <li><input type="radio" name="q30" value="b"> b) a eliminação dos microrganismos do organismo.</li>
+    <li><input type="radio" name="q30" value="c"> c) a redução do risco de infecção.</li>
+    <li><input type="radio" name="q30" value="d"> d) o aumento da resistência dos microrganismos aos antibióticos.</li>
+    <li><input type="radio" name="q30" value="e"> e) o tratamento dos sintomas das doenças infecciosas.</li>
+  </ul>
+  <div class="answer" id="q30-answer">Resposta: c) a redução do risco de infecção.</div>
+</div>
+
+<!-- Questão 31 -->
+<div class="question">
+  <p><strong>31. (ENEM) O soro é uma forma de imunização passiva, na qual anticorpos produzidos por outro organismo são administrados em um indivíduo para conferir imunidade imediata contra uma determinada doença. Um exemplo de uso do soro é o tratamento da picada de serpentes peçonhentas. Nesse caso, o soro é produzido:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q31" value="a"> a) a partir do veneno da serpente, que é diluído e administrado em doses crescentes.</li>
+    <li><input type="radio" name="q31" value="b"> b) a partir de anticorpos produzidos por animais imunizados com o veneno da serpente.</li>
+    <li><input type="radio" name="q31" value="c"> c) por meio da infecção de animais com o veneno da serpente, que produzem anticorpos em resposta à infecção.</li>
+    <li><input type="radio" name="q31" value="d"> d) a partir do plasma sanguíneo de pessoas imunizadas com o veneno da serpente.</li>
+    <li><input type="radio" name="q31" value="e"> e) por meio da extração direta do veneno da serpente e sua administração no indivíduo picado.</li>
+  </ul>
+  <div class="answer" id="q31-answer">Resposta: b) a partir de anticorpos produzidos por animais imunizados com o veneno da serpente.</div>
+</div>
+
+<!-- Questão 32 -->
+<div class="question">
+  <p><strong>32. (ENEM) No Brasil, a poliomielite é uma doença erradicada devido às campanhas de vacinação realizadas pelo Ministério da Saúde. A vacina contra a poliomielite é administrada por via oral e contém vírus atenuados da poliomielite. Após a administração da vacina, o organismo:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q32" value="a"> a) produz anticorpos contra o vírus da poliomielite, conferindo imunidade ativa.</li>
+    <li><input type="radio" name="q32" value="b"> b) elimina rapidamente o vírus da poliomielite, prevenindo a infecção.</li>
+    <li><input type="radio" name="q32" value="c"> c) desenvolve sintomas leves da poliomielite, que são controlados pelo sistema imunológico.</li>
+    <li><input type="radio" name="q32" value="d"> d) torna-se imediatamente imune à poliomielite, sem a necessidade de doses adicionais.</li>
+    <li><input type="radio" name="q32" value="e"> e) adquire imunidade passiva contra o vírus da poliomielite, através da transferência de anticorpos da vacina.</li>
+  </ul>
+  <div class="answer" id="q32-answer">Resposta: a) produz anticorpos contra o vírus da poliomielite, conferindo imunidade ativa.</div>
+</div>
+
+<!-- Questão 33 -->
+<div class="question">
+  <p><strong>33. (ENEM) O sistema imunológico é responsável por defender o organismo contra agentes infecciosos, como bactérias, vírus e parasitas. As vacinas são uma forma de estimular o sistema imunológico a reconhecer e combater esses agentes. Após a administração de uma vacina, ocorre a formação de células de memória, que são importantes porque:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q33" value="a"> a) produzem diretamente os anticorpos necessários para combater os agentes patogênicos.</li>
+    <li><input type="radio" name="q33" value="b"> b) estimulam a produção de citocinas pró-inflamatórias, que combatem os agentes patogênicos.</li>
+    <li><input type="radio" name="q33" value="c"> c) fornecem imunidade imediata contra os agentes patogênicos, sem a necessidade de uma resposta imunológica.</li>
+    <li><input type="radio" name="q33" value="d"> d) permitem uma resposta imunológica mais rápida e eficaz na presença dos agentes patogênicos.</li>
+    <li><input type="radio" name="q33" value="e"> e) neutralizam os agentes patogênicos antes que eles possam causar doenças no organismo.</li>
+  </ul>
+  <div class="answer" id="q33-answer">Resposta: d) permitem uma resposta imunológica mais rápida e eficaz na presença dos agentes patogênicos.</div>
+</div>
+
+<!-- Questão 34 -->
+<div class="question">
+  <p><strong>34. (ENEM) O sarampo é uma doença viral aguda, altamente contagiosa, que pode ser prevenida por meio da vacinação. Uma pessoa que contraiu sarampo e se recuperou da doença:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q34" value="a"> a) torna-se imune à doença, sem a necessidade de vacinação.</li>
+    <li><input type="radio" name="q34" value="b"> b) adquire imunidade permanente contra o vírus, sem risco de reinfecção.</li>
+    <li><input type="radio" name="q34" value="c"> c) pode ser infectada novamente pelo vírus, caso não receba a vacinação.</li>
+    <li><input type="radio" name="q34" value="d"> d) pode transmitir o vírus a outras pessoas, mesmo após a recuperação da doença.</li>
+    <li><input type="radio" name="q34" value="e"> e) necessita de doses de reforço da vacina para manter a imunidade contra o vírus.</li>
+  </ul>
+  <div class="answer" id="q34-answer">Resposta: c) pode ser infectada novamente pelo vírus, caso não receba a vacinação.</div>
+</div>
+
+<!-- Questão 35 -->
+<div class="question">
+  <p><strong>35. (ENEM) A vacina contra a febre amarela é indicada para pessoas que vivem em áreas de risco de transmissão da doença. Um aspecto importante da vacinação contra a febre amarela é que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q35" value="a"> a) a vacina é administrada em dose única e confere imunidade permanente contra a doença.</li>
+    <li><input type="radio" name="q35" value="b"> b) a vacina é contraindicada para pessoas com mais de 60 anos, devido ao risco de reações adversas graves.</li>
+    <li><input type="radio" name="q35" value="c"> c) a vacina é administrada em duas doses, com intervalo de 30 dias entre elas, e confere imunidade permanente contra a doença.</li>
+    <li><input type="radio" name="q35" value="d"> d) a vacina é contraindicada para gestantes, devido ao risco de complicações para o feto.</li>
+    <li><input type="radio" name="q35" value="e"> e) a vacina é administrada em dose única e confere imunidade temporária contra a doença, sendo necessária uma dose de reforço a cada 10 anos.</li>
+  </ul>
+  <div class="answer" id="q35-answer">Resposta: e) a vacina é administrada em dose única e confere imunidade temporária contra a doença, sendo necessária uma dose de reforço a cada 10 anos.</div>
+</div>
+
+<!-- Questão 36 -->
+<div class="question">
+  <p><strong>36. (ENEM) A vacinação é uma estratégia de saúde pública eficaz na prevenção de diversas doenças infecciosas. Uma das vantagens da vacinação é que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q36" value="a"> a) todas as pessoas vacinadas adquirem imunidade permanente contra as doenças.</li>
+    <li><input type="radio" name="q36" value="b"> b) as vacinas são 100% eficazes na prevenção das doenças.</li>
+    <li><input type="radio" name="q36" value="c"> c) a vacinação é contraindicada para pessoas com sistema imunológico comprometido.</li>
+    <li><input type="radio" name="q36" value="d"> d) a vacinação contribui para a erradicação de doenças infecciosas, como a varíola.</li>
+    <li><input type="radio" name="q36" value="e"> e) as vacinas podem causar a doença que se propõem a prevenir.</li>
+  </ul>
+  <div class="answer" id="q36-answer">Resposta: d) a vacinação contribui para a erradicação de doenças infecciosas, como a varíola.</div>
+</div>
+
+<!-- Questão 37 -->
+<div class="question">
+  <p><strong>37. (ENEM) A imunização é uma estratégia importante na prevenção de doenças infecciosas, como o sarampo. Uma característica das vacinas é que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q37" value="a"> a) todas as vacinas são administradas por via intravenosa.</li>
+    <li><input type="radio" name="q37" value="b"> b) as vacinas podem causar a doença que se propõem a prevenir.</li>
+    <li><input type="radio" name="q37" value="c"> c) a vacinação é contraindicada para pessoas com sistema imunológico comprometido.</li>
+    <li><input type="radio" name="q37" value="d"> d) as vacinas são administradas em dose única e conferem imunidade permanente contra as doenças.</li>
+    <li><input type="radio" name="q37" value="e"> e) a vacinação é eficaz apenas na prevenção de doenças bacterianas, não sendo indicada para doenças virais.</li>
+  </ul>
+  <div class="answer" id="q37-answer">Resposta: b) as vacinas podem causar a doença que se propõem a prevenir.</div>
+</div>
+
+<!-- Questão 38 -->
+<div class="question">
+  <p><strong>38. (ENEM) A vacinação é uma estratégia de saúde pública utilizada para prevenir doenças infecciosas. Uma das características das vacinas é que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q38" value="a"> a) as vacinas são administradas após a manifestação dos sintomas da doença.</li>
+    <li><input type="radio" name="q38" value="b"> b) as vacinas são contraindicadas para gestantes, devido ao risco de complicações para o feto.</li>
+    <li><input type="radio" name="q38" value="c"> c) as vacinas contêm microrganismos vivos, que causam a doença de forma controlada.</li>
+    <li><input type="radio" name="q38" value="d"> d) as vacinas podem causar efeitos colaterais graves, como reações alérgicas.</li>
+    <li><input type="radio" name="q38" value="e"> e) as vacinas estimulam o sistema imunológico a produzir anticorpos específicos contra os agentes patogênicos.</li>
+  </ul>
+  <div class="answer" id="q38-answer">Resposta: e) as vacinas estimulam o sistema imunológico a produzir anticorpos específicos contra os agentes patogênicos.</div>
+</div>
+
+<!-- Questão 39 -->
+<div class="question">
+  <p><strong>39. (ENEM) A vacinação é uma medida importante na prevenção de doenças infecciosas, como a influenza. Uma característica das vacinas é que:</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q39" value="a"> a) as vacinas são contraindicadas para pessoas com sistema imunológico comprometido.</li>
+    <li><input type="radio" name="q39" value="b"> b) as vacinas são administradas após a manifestação dos sintomas da doença.</li>
+    <li><input type="radio" name="q39" value="c"> c) as vacinas conferem imunidade imediata e permanente contra as doenças.</li>
+    <li><input type="radio" name="q39" value="d"> d) as vacinas são administradas em dose única e não requerem doses de reforço.</li>
+    <li><input type="radio" name="q39" value="e"> e) as vacinas são administradas em duas doses, com intervalo de 30 dias entre elas.</li>
+  </ul>
+  <div class="answer" id="q39-answer">Resposta: e) as vacinas são administradas em duas doses, com intervalo de 30 dias entre elas.</div>
+</div>
+
+
+<!-- Questão 40 -->
+<div class="question">
+  <p><strong>40. Qual das seguintes opções descreve melhor a função das células T regulatórias no sistema imunológico?</strong></p>
+  <ul class="options">
+    <li><input type="radio" name="q40" value="incorrect"> a) Estimulam a atividade dos linfócitos T citotóxicos.</li>
+    <li><input type="radio" name="q40" value="incorrect"> b) Promovem a produção de anticorpos pelas células B.</li>
+    <li><input type="radio" name="q40" value="correct"> c) Controlam e suprimem respostas imunológicas excessivas.</li>
+    <li><input type="radio" name="q40" value="incorrect"> d) Ativam a resposta inflamatória no local da infecção.</li>
+  </ul>
+</div>
+
+<button onclick="submitQuiz()">Submeter</button>
+
+<div id="quiz-results"></div>
+
+<script>
+  function submitQuiz() {
+    const answers = {
+      q1: document.querySelector('input[name="q1"]:checked'),
+      q2: document.querySelector('input[name="q2"]:checked'),
+      // Inclua todas as outras questões aqui...
+      q39: document.querySelector('input[name="q39"]:checked'),
+      q40: document.querySelector('input[name="q40"]:checked'),
+    };
+
+    let score = 0;
+
+    for (const question in answers) {
+      const userAnswer = answers[question];
+
+      if (userAnswer) {
+        const parentListItem = userAnswer.parentNode;
+        const questionFeedback = parentListItem.querySelector('.feedback');
+
+        if (userAnswer.value === "correct") {
+          score++;
+
+          // Resposta correta
+          parentListItem.style.color = 'green'; // Texto verde
+          if (questionFeedback) {
+            questionFeedback.textContent = 'Resposta correta!';
+          }
+        } else {
+          // Resposta incorreta
+          parentListItem.style.color = 'red'; // Texto vermelho
+          if (questionFeedback) {
+            questionFeedback.textContent = 'Resposta incorreta.';
+          }
+        }
+      }
+    }
+
+    const resultsContainer = document.getElementById("quiz-results");
+    resultsContainer.innerHTML = `Você acertou ${score} de 40 perguntas.`;
+  }
+</script>
+
+
+</body>
+</html>
